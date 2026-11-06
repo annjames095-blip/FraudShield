@@ -1,0 +1,83 @@
+{
+  "synthetic": false,
+  "seeds": 5,
+  "selected_model_seed0": "LogReg",
+  "selection_method": "Highest validation PR-AUC",
+  "split": {
+    "train": {
+      "rows": 170884,
+      "frauds": 360
+    },
+    "calib": {
+      "rows": 28481,
+      "frauds": 24
+    },
+    "tune": {
+      "rows": 28481,
+      "frauds": 33
+    },
+    "test": {
+      "rows": 56961,
+      "frauds": 75
+    }
+  },
+  "rows_clean": 284807,
+  "rows_quarantined": 0,
+  "exact_duplicate_rows": 1081,
+  "review_budget": 0.02,
+  "cost_model": {
+    "false_block_cost": 10.0,
+    "review_cost": 2.0,
+    "reviewer_accuracy": 0.95
+  },
+  "thresholds_seed0": {
+    "t_low": 0.4193670886075949,
+    "t_high": 0.4193670886075949,
+    "tuning_defer_rate": 0.0
+  },
+  "baseline_method": "Calibrated model (no deferral)",
+  "baseline_cost_seed0": 3045.6800000000003,
+  "fraudshield_cost_seed0": 3045.6800000000003,
+  "cost_saving_seed0": 0.0,
+  "cost_saving_ci95_seed0": [
+    0.0,
+    0.0
+  ],
+  "mean_cost_saving_per_transaction_ci95_seed0": [
+    0.0,
+    0.0
+  ],
+  "fraudshield_pr_auc_ci95_seed0": [
+    0.6693714968928206,
+    0.8656371490923839
+  ],
+  "expected_cost_policy_seed0": {
+    "total_cost": 2703.275,
+    "silent_miss_rate": 0.36,
+    "fraud_blocked_rate": 0.5466666666666666,
+    "fraud_deferred_rate": 0.09333333333333334,
+    "auto_block_precision": 0.8723404255319149,
+    "defer_rate": 0.0014571373395832236,
+    "n_deferred": 83,
+    "n_approved": 56831,
+    "n_blocked": 47,
+    "n_false_blocks": 6,
+    "n_frauds": 75,
+    "n_legitimate": 56886
+  },
+  "expected_cost_policy_total_seed0": 2703.275,
+  "expected_cost_policy_savings_seed0": 342.405,
+  "expected_cost_policy_across_seeds": {
+    "total_cost_mean": 2703.275,
+    "total_cost_std": 0.0,
+    "cost_savings_mean": 342.405,
+    "cost_savings_std": 0.0,
+    "cost_savings_percent_mean": 11.242316986682775,
+    "defer_rate_mean": 0.0014571373395832236,
+    "silent_miss_rate_mean": 0.36,
+    "fraud_blocked_rate_mean": 0.5466666666666666,
+    "fraud_deferred_rate_mean": 0.09333333333333334
+  },
+  "shap": {},
+  "runtime_s": 472.3
+}
